@@ -86,6 +86,18 @@ npm run build // its create dist/with files*.js
 npm run dev  // run js files from dist/*.js
 ```
 
+7. add likes.ts
+
+```
+1. need like 1 car
+
+incr by 1
+
+2. need unlike 1 car
+
+
+3. need only 1 user can one like but to many cars
+```
 
 ## License
 
