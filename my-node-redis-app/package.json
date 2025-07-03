@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A simple Node.js application using Redis",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "build": "tsc",
+    "dev": "nodemon --watch src --exec \"npm run build && node --enable-source-maps dist/index.js\"",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
     "redis": "^4.7.1"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+    "@types/node": "^24.0.10",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  },
+  "author": "",
+  "license": "ISC"
 }

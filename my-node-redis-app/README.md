@@ -79,6 +79,14 @@ npm install --save-dev nodemon
 }
 ```
 
+6. add ts files
+
+```bash
+npm run build // its create dist/with files*.js
+npm run dev  // run js files from dist/*.js
+```
+
+
 ## License
 
 This project is licensed under the MIT License.
